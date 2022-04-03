@@ -192,11 +192,17 @@ console.log (resultadoMultiplicacion) */
 // Ejecutá la función sumar y mostrá su resultado en la consola
 
 //console.log(nombreFuncion(10));
-
 function sumar(numero1, numero2) {
   return numero1 + numero2;
 }
 
+function multiplicar(numero1, numero2) {
+    return numero1 * numero2
+}
+
+function dividir (numero1, numero2) {
+    return numero1 / numero2
+}
 let num1 = 1;
 let num2 = 2;
 
@@ -283,16 +289,20 @@ function restar(numero1, numero2) {
 // No se olviden de hacer un console.log para ver el resultado!
 //
 
-let operador = '-'
+let operador = 't'
 let num6 = 1
 let num7 = 2
 
 if (operador === '+') {
     console.log(sumar(num6,num7))
-
-}else {
+}else if (operador === '-'){
     console.log(restar(num6,num7))
-}
+}else if (operador === '*'){
+    console.log(multiplicar(num6,num7))
+}else if (operador === '/'){
+    console.log(dividir(num6,num7))
+}else {console.log('perdon, no conozco ese operador')}
+
 
 // TAREA: Cambiar el operador a '-', y fijarse que llame a la función 'restar' en vez de a la de 'sumar'.
 
@@ -348,6 +358,10 @@ if (operador === '+') {
 
 // TAREA: usando el operador !, Intentá invertir una variable (de true a false, o de false a true) e imprimí el
 // resultado en la consola.
+
+const prueba = 1===1
+console.log(prueba)
+console.log(!prueba)
 
 ////////////////////////////////////////////////////////////////////////////
 // Felicitaciones! LO TERMINASSTEE 😎😎😎🥵😍😁😁                      //

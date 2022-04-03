@@ -32,10 +32,8 @@
 // TAREA: Crea tu propio array, llamado comidasFavoritas, y escribi dentro algunas
 //       cosas que te gustan.
 
-
-
-
-
+let comidasFavoritas = ["papasFritas", "panchos", "hamburguesas"]
+console.log (comidasFavoritas)
 
 
 /*
@@ -52,6 +50,7 @@
 // TAREA: Verifique cuántos valores tiene en su array comidasFavoritas.
 // imprimi utilizando console.log el resultado.
 
+console.log (comidasFavoritas.length)
 
 
 
@@ -73,7 +72,8 @@
 
 // TAREA: Obtené el tercer elemento de tu array comidasFavoritas e imprimilo utilizando console.log.
 
-
+let tercerComida = comidasFavoritas[2];
+console.log(tercerComida)
 
 
 
@@ -94,7 +94,8 @@
 // con cualquier otra cosa.
 
 
-
+comidasFavoritas[0] = 'ensalada';
+console.log (comidasFavoritas)
 
 
 
@@ -121,7 +122,8 @@
 // TAREA: Extendamos tu lista de comidasFavoritas y agreguemos un valor más.
 
 
-
+comidasFavoritas.push('arroz');
+console.log (comidasFavoritas)
 
 
 
@@ -149,7 +151,19 @@
 
 // TAREA: Intenta crear un array como una constante y modifica los valores que contiene.
 
+//let textoPrueba = "alexis"
+let numero = 123
 
+function prueba (a) {
+    a = 456
+    console.log("Valor de a dentro de la funcion: ", a)
+}
+
+console.log("numero antes de ejecutar la funcion: ", numero)
+
+prueba(numero)
+
+console.log("numero despues de ejecutar la funcion: ", numero)
 
 
 
