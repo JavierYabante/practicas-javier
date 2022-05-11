@@ -32,9 +32,8 @@
 // TAREA: Crea tu propio array, llamado comidasFavoritas, y escribi dentro algunas
 //       cosas que te gustan.
 
-let comidasFavoritas = ["papasFritas", "panchos", "hamburguesas"]
-console.log (comidasFavoritas)
-
+let comidasFavoritas = ["papasFritas", "panchos", "hamburguesas"];
+console.log(comidasFavoritas);
 
 /*
     Tamaño del Array
@@ -50,11 +49,7 @@ console.log (comidasFavoritas)
 // TAREA: Verifique cuántos valores tiene en su array comidasFavoritas.
 // imprimi utilizando console.log el resultado.
 
-console.log (comidasFavoritas.length)
-
-
-
-
+console.log(comidasFavoritas.length);
 
 /*
     Uso del Array
@@ -73,10 +68,7 @@ console.log (comidasFavoritas.length)
 // TAREA: Obtené el tercer elemento de tu array comidasFavoritas e imprimilo utilizando console.log.
 
 let tercerComida = comidasFavoritas[2];
-console.log(tercerComida)
-
-
-
+console.log(tercerComida);
 
 /*
     Cambio de Valores en Arrays
@@ -93,18 +85,10 @@ console.log(tercerComida)
 // TAREA: Toma tu array de comidasFavoritas y reemplaza el primer valor
 // con cualquier otra cosa.
 
-
-comidasFavoritas[0] = 'ensalada';
-console.log (comidasFavoritas)
-
-
+comidasFavoritas[0] = "ensalada";
+console.log(comidasFavoritas);
 
 // TAREA: console.log todo el array para verificar.
-
-
-
-
-
 
 // TIP: ¡No te olvides que las posiciones de índice comienzan desde 0!
 
@@ -121,18 +105,10 @@ console.log (comidasFavoritas)
 
 // TAREA: Extendamos tu lista de comidasFavoritas y agreguemos un valor más.
 
-
-comidasFavoritas.push('arroz');
-console.log (comidasFavoritas)
-
-
+comidasFavoritas.push("arroz");
+console.log(comidasFavoritas);
 
 // TAREA: console.log todo el array para verificar.
-
-
-
-
-
 
 /*
     Nota acerca Arrays constantes
@@ -152,31 +128,21 @@ console.log (comidasFavoritas)
 // TAREA: Intenta crear un array como una constante y modifica los valores que contiene.
 
 //let textoPrueba = "alexis"
-let numero = 123
 
-function prueba (a) {
-    a = 456
-    console.log("Valor de a dentro de la funcion: ", a)
-}
+const colors = ["rojo", "amarillo", "verde"];
+colors[0] = "azul";
+colors.push("violeta");
 
-console.log("numero antes de ejecutar la funcion: ", numero)
-
-prueba(numero)
-
-console.log("numero despues de ejecutar la funcion: ", numero)
-
-
-
-
+//console.log(colors)
 
 // TAREA: Observa lo que sucede si agregas algo con.push(), cambias algo
 //       con notación de corchetes (array[1]) y
 //       asigna un nuevo array completamente nuevo a la constante
 
+colors[0] = "oro";
+colors.push("plata");
 
-
-
-
+//colors = ['gato']
 
 /*
     Bucles
@@ -216,10 +182,11 @@ console.log("numero despues de ejecutar la funcion: ", numero)
 // TAREA: Usando un bucle 'while', decile a tu computadora que registre los números de
 //       diez a uno.
 
-
-
-
-
+let numero = 10;
+while (numero > 0) {
+  console.log(numero);
+  numero = numero - 1;
+}
 
 /*
     Bucles for (para)
@@ -235,10 +202,10 @@ console.log("numero despues de ejecutar la funcion: ", numero)
 
 // TAREA: Imprimí cada 3er número del 3 al 22 usando un 'bucle for'.
 
-
-
-
-
+let numero2;
+for (numero2 = 3; numero2 < 22; numero2 = numero2 + 3) {
+  //console.log("este es el tercer numero", numero2);
+}
 
 /*
     Iterando a traves de Arrays
@@ -248,6 +215,9 @@ console.log("numero despues de ejecutar la funcion: ", numero)
     Podemos usar un 'bucle for' para iterar a través de nuestro array y obtener cada valor
     de eso.
     Nota: i++ es otra forma de expresar i = i + 1.
+    i = i + 3
+    i += 3
+
     Ejemplo:
     const animales = ['gatos', 'perros', 'caballos'];
     for(let i = 0; i < animales.length; i++){
@@ -255,12 +225,12 @@ console.log("numero despues de ejecutar la funcion: ", numero)
     }
 */
 
-// TAREA: Probalo con tu comidasFavoritas array.
+// TAREA: Probalo con tu comidas array.
 
-
-
-
-
+const comidas = ["papasFritas", "empanadas", "hamburguesas"];
+for (let i = 0; i < comidas.length; i++) {
+  console.log("me gustan las", comidas[i]);
+}
 
 /*
     Bucles y Logica
@@ -295,11 +265,6 @@ console.log("numero despues de ejecutar la funcion: ", numero)
 // 10% 3 = 1 - en 10 tenemos 3 * 3 + 1
 // 16% 4 = 0 - en 16 tenemos 4 * 4
 // 19% 4 = 3 - en 19 tenemos 4 * 4 + 3, etc.
-
-
-
-
-
 
 //////////////////////////////////////////////////////////////////////////////
 // ¡Felicidades! ¡Has terminado el Nivel 2 de JavaScript Básico!            //
