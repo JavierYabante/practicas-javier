@@ -33,7 +33,7 @@
 //       cosas que te gustan.
 
 let comidasFavoritas = ["papasFritas", "panchos", "hamburguesas"];
-console.log(comidasFavoritas);
+//console.log(comidasFavoritas);
 
 /*
     Tamaño del Array
@@ -49,7 +49,7 @@ console.log(comidasFavoritas);
 // TAREA: Verifique cuántos valores tiene en su array comidasFavoritas.
 // imprimi utilizando console.log el resultado.
 
-console.log(comidasFavoritas.length);
+/*console.log(comidasFavoritas.length);
 
 /*
     Uso del Array
@@ -68,7 +68,7 @@ console.log(comidasFavoritas.length);
 // TAREA: Obtené el tercer elemento de tu array comidasFavoritas e imprimilo utilizando console.log.
 
 let tercerComida = comidasFavoritas[2];
-console.log(tercerComida);
+/*console.log(tercerComida);
 
 /*
     Cambio de Valores en Arrays
@@ -86,7 +86,7 @@ console.log(tercerComida);
 // con cualquier otra cosa.
 
 comidasFavoritas[0] = "ensalada";
-console.log(comidasFavoritas);
+/*console.log(comidasFavoritas);
 
 // TAREA: console.log todo el array para verificar.
 
@@ -106,7 +106,7 @@ console.log(comidasFavoritas);
 // TAREA: Extendamos tu lista de comidasFavoritas y agreguemos un valor más.
 
 comidasFavoritas.push("arroz");
-console.log(comidasFavoritas);
+/*console.log(comidasFavoritas);
 
 // TAREA: console.log todo el array para verificar.
 
@@ -182,7 +182,7 @@ colors.push("plata");
 // TAREA: Usando un bucle 'while', decile a tu computadora que registre los números de
 //       diez a uno.
 
-let numero = 10;
+/*let numero = 10;
 while (numero > 0) {
   console.log(numero);
   numero = numero - 1;
@@ -204,7 +204,7 @@ while (numero > 0) {
 
 let numero2;
 for (numero2 = 3; numero2 < 22; numero2 = numero2 + 3) {
-  //console.log("este es el tercer numero", numero2);
+    //console.log("este es el tercer numero", numero2);
 }
 
 /*
@@ -227,10 +227,10 @@ for (numero2 = 3; numero2 < 22; numero2 = numero2 + 3) {
 
 // TAREA: Probalo con tu comidas array.
 
-const comidas = ["papasFritas", "empanadas", "hamburguesas"];
+/*const comidas = ["papasFritas", "empanadas", "hamburguesas"];
 for (let i = 0; i < comidas.length; i++) {
   console.log("me gustan las", comidas[i]);
-}
+}*/
 
 /*
     Bucles y Logica
@@ -253,7 +253,21 @@ for (let i = 0; i < comidas.length; i++) {
 // TAREA: Ha llegado el momento de un ejercicio clásico: 'FizzBuzz'.
 
 // Cuenta del 1 al 50 e imprime los números:
-//
+
+for (let i = 1; i <= 50; i = i + 1) {
+
+    if ((i % 3 === 0) && (i % 5 === 0)) {
+        console.log('BuzzFizz', i)
+    }
+    if (i % 3 === 0) {
+        console.log('fizz', i)
+    } if (i % 5 === 0) {
+        console.log('Buzz', i)
+    }
+}
+
+
+
 // * Si un número es múltiplo de tres, imprime 'Fizz'.
 // * Si es un múltiplo de 5, imprime 'Buzz'.
 // * Si es un múltiplo de 3 y 5, imprime 'FizzBuzz'.
