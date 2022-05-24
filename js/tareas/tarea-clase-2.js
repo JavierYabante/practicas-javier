@@ -16,4 +16,26 @@
 // No se olviden de hacer un console.log para ver el resultado!
 //
 
+let operador = '+'
+let num = 1
+let num2 = 2
+
+function sumar(numero1, numero2) {
+    return numero1 + numero2
+}
+function restar(numero1, numero2) {
+    return numero1 - numero2
+}
+
+if (operador === '+') {
+    console.log(sumar(num, num2))
+}
+else {
+    let resultadoDeFuncion2 = restar(num, num2);
+    console.log(resultadoDeFuncion2)
+}
+
+//las dos formas funcionan ... 
+
+
 // TAREA: Cambiar el operador a '-', y fijarse que llame a la función 'restar' en vez de a la de 'sumar'.
