@@ -29,13 +29,12 @@ function restar(numero1, numero2) {
 
 if (operador === '+') {
     console.log(sumar(num, num2))
-}
-else {
+} else {
     let resultadoDeFuncion2 = restar(num, num2);
     console.log(resultadoDeFuncion2)
 }
 
-//las dos formas funcionan ... 
+//las dos formas funcionan ...
 
 
 // TAREA: Cambiar el operador a '-', y fijarse que llame a la función 'restar' en vez de a la de 'sumar'.
